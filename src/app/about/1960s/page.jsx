@@ -103,8 +103,8 @@ const Page = () => {
                 <section className='flex justify-center items-center w-full mt-10 mb-10 h-fit lg:px-10'>
                     <div className='w-[75%] h-fit flex'>
                         <div className='grid grid-cols-3 w-full gap-3'>
-                            {mediaData.map(item => (
-                                <div className='flex flex-col h-[40vh]'>
+                            {mediaData.map((item, i) => (
+                                <div key={i} className='flex flex-col h-[40vh]'>
                                     <Image alt={item.alt} src={item.src} width={item.width} height={item.height} className='rounded-xl object-cover w-full flex' />
                                     <h1 className='font-bold text-lg py-2'>{item.title}</h1>
                                 </div>
@@ -119,7 +119,7 @@ const Page = () => {
                             <source src='https://ikeamuseum.com/wp-content/uploads/2021/05/IKEA_60s_ENG_MASTER_03_SUB_1.mp4?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D' type='video/mp4' />
                         </video>
                         <div className='text-center w-full flex flex-col justify-center items-center'>
-                            <h1 className='font-bold text-2xl py-3'>The political ’60s</h1>
+                            <h1 className='font-bold text-2xl py-3'>The political 60s</h1>
                             <p className='max-w-[65%]'>The world is rocked by ideological conflict. In Sweden, social reforms improve living standards. A building boom creates a need for home furnishings and an IKEA flagship store opens in Stockholm.</p>
                         </div>
                     </div>
@@ -131,8 +131,9 @@ const Page = () => {
                         descShort='The key to IKEA.'
                         src='https://ikeamuseum.com/wp-content/uploads/2021/05/im-story-of-ikea-feed-allen-key.mp4?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D' />
 
-                    {ikeaImages.map(item => (
+                    {ikeaImages.map((item, i) => (
                         <CardBodyImage
+                            key={i}
                             caption={item.title}
                             descShort={item.description}
                             src={item.src} />

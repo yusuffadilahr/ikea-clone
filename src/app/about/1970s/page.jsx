@@ -9,46 +9,6 @@ import CardGridResponsive from '@/components/core/cardContent/cardGridResponsive
 const Page = () => {
     let pathName = usePathname()
     pathName = pathName.slice(-3)
-    console.log(pathName)
-
-    const historyData = [
-        {
-            id: 1,
-            title: 'Cześć, Polsko!',
-            description: 'Swedish manufacturers did not have the capacity to meet Ingvar Kamprad’s demand. And a lot of the Swedish...',
-            imageUrl: 'https://ikeamuseum.com/wp-content/uploads/2021/06/im-1960-czesc-polsko-01-ft-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'
-        },
-        {
-            id: 2,
-            title: 'First store abroad',
-            description: 'IKEA went international and opened a store in Norway. But how did that decision come about? Through a...',
-            imageUrl: 'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2021/06/im-1960-first-store-abroad-01-ft-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'
-        },
-        {
-            id: 3,
-            title: 'Dear Brita!',
-            description: 'At the end of the 1950s, the IKEA catalogues looked completely different to the later editions, with their styled home...',
-            imageUrl: 'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2022/09/im-1960-roomsettingsbrita-01-ft-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'
-        },
-        {
-            id: 4,
-            title: 'Quality',
-            description: 'In September 1964, a sensational article was published in a Swedish interior design magazine, claiming that a 33...',
-            imageUrl: 'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2021/04/ikea-testing-room-furniture-durability-store-1960s-768x432.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'
-        },
-        {
-            id: 5,
-            title: 'More than a low price',
-            description: 'IKEA is a balancing act between seemingly conflicting ambitions. Sales machine or inspiration? Business or...',
-            imageUrl: 'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2021/05/fd-morethanalowprice-featured-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'
-        },
-        {
-            id: 6,
-            title: 'Ingvar in America',
-            description: 'In the early 1960s, Ingvar Kamprad started planning for further expansion of IKEA in Scandinavia and the wider world...',
-            imageUrl: 'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2021/06/im-1960-ingvar-in-america-01-ft-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'
-        }
-    ];
 
     const ikeaHistory = [
         {
@@ -76,29 +36,6 @@ const Page = () => {
             image: "https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2021/05/fd-wood-featured.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D"
         }
     ]
-
-    const ikeaData = [
-        {
-          title: "Democratic Design",
-          description: "What is Democratic Design? Is it a road map for product developers, or a communicative tool that brings great ideas to life?",
-          imageUrl: "https://ikeamuseum.com/wp-content/uploads/2021/05/fd-democraticdesign-featured.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D"
-        },
-        {
-          title: "Do you speak hot dog?",
-          description: "How many brilliant ideas can you get thinking about hot dogs? Quite a lot as it turns out. In the mid-1990s, IKEA realised that...",
-          imageUrl: "https://ikeamuseum.com/wp-content/uploads/2021/05/fd-1990-5-sek-hotdog-featured-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D"
-        },
-        {
-          title: "When the eyes came off",
-          description: "When Catti Bengtsson’s phone rang one afternoon in May 1997, she had no reason to be concerned. For just over three years...",
-          imageUrl: "https://ikeamuseum.com/wp-content/uploads/2024/06/childrens-ikea-teddy-bear-gosse-1990s-ft-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D"
-        },
-        {
-          title: "Children’s IKEA",
-          description: "Explore two stories about Children’s IKEA. Children and families with children have always been central to IKEA. But it was in the...",
-          imageUrl: "https://ikeamuseum.com/wp-content/uploads/2021/06/fd-childrens-featured.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D"
-        }
-      ];
 
 
     return (
@@ -140,15 +77,15 @@ const Page = () => {
                             <source src='https://ikeamuseum.com/wp-content/uploads/2021/05/IKEA_70s_ENG_MASTER_03_SUB_1.mp4?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D' type='video/mp4' />
                         </video>
                         <div className='text-center w-full flex flex-col justify-center items-center'>
-                            <h1 className='font-bold text-base md:text-xl lg:text-2xl md:py-3'>The radical ’70s</h1>
+                            <h1 className='font-bold text-base md:text-xl lg:text-2xl md:py-3'>The radical 70s</h1>
                             <p className='md:max-w-[65%] text-sm md:text-lg lg:text-xl'>A decade defined by political activism and discussion around consumerism. A good fit for the unpretentious style of IKEA. Despite the looming oil crisis, the great expansion begins.</p>
                         </div>
                     </div>
                 </section>
                 
                 <CardArticle>
-                    {ikeaHistory.map(item => (
-                        <div className='flex flex-col'>
+                    {ikeaHistory.map((item,i) => (
+                        <div className='flex flex-col' key={i}>
                             {item.image ? (
                                 <>
                                     <Image alt='history' src={item.image} width={1000} height={1000} className='rounded-xl h-96 object-cover w-full flex' />

@@ -72,7 +72,7 @@ const Page = () => {
             <VideoContent
                 video='https://ikeamuseum.com/wp-content/uploads/2021/05/IKEA_50s_ENG_MASTER_03_SUB_1.mp4?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'
                 descShort='In the shadow of the Cold War, Sweden experiences a time of self-confidence and progress and Swedes have more money. IKEA opens home furnishing showrooms and what will become the first store in Älmhult.'
-                title='The rocking ’50s'
+                title='The rocking 50s'
                 bgColor='bg-cyan-50'
             />
 
@@ -80,8 +80,8 @@ const Page = () => {
                 <div className='flex justify-center items-center w-full mt-20 mb-10 h-fit lg:px-10'>
                     <div className='md:w-[85%] w-[90%] lg:w-[75%] h-fit flex'>
                         <div className='grid grid-cols-1 md:grid-cols-2 w-full gap-3'>
-                            {flatpackData.map((item) => (
-                                <div className='flex flex-col h-full'>
+                            {flatpackData.map((item, i) => (
+                                <div className='flex flex-col h-full' key={i}>
                                     <Image alt='history' src={item.image} width={1000} height={1000} className='rounded-xl object-cover h-96 w-full flex' />
                                     <h1 className='font-bold text-lg py-2'>{item.title}</h1>
                                 </div>

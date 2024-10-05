@@ -107,14 +107,14 @@ const Page = () => {
                 </CardGridResponsive>
 
                 <CardContent mb='mb-0 lg:mt-5 mt-28'>
-                    {ikeaCollections.map(item => (
-                        <CardBodyImage src={item.image_url} caption={item.title} descShort={item.description} />
+                    {ikeaCollections.map((item, i) => (
+                        <CardBodyImage key={i} src={item.image_url} caption={item.title} descShort={item.description} />
                     ))}
                 </CardContent>
 
                 <CardArticle bgColor='bg-black py-20 text-white'>
-                    {dataIkea.map(item => (
-                        <div className='flex flex-col'>
+                    {dataIkea.map((item, i) => (
+                        <div key={i} className='flex flex-col'>
                             <Image alt='history' src={item.image_url} width={1000} height={1000} className='rounded-xl h-96 object-cover w-full flex' />
                             <h1 className='font-bold text-lg py-2'>{item.title}</h1>
                             <p className='h-12 scroll-smooth overflow-x-auto text-neutral-500'>{item.description}</p>
