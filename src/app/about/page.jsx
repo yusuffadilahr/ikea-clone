@@ -52,7 +52,7 @@ const AboutPage = ({ children, hiddenContent='block', px='px-5', year }) => {
                             <Image alt='founder' className='w-full object-cover rounded-xl h-full' src={'https://www.ikea.com/global/en/images/ingvarwithchair_28c4a64ed2.jpg?f=sg'} width={500} height={500} />
                             <div className='flex flex-col max-w-[70%] justify-center mt-36 items-center w-full'>
                                 <h1 className='flex justify-normal items-center mb-8 w-full font-bold text-5xl'>The story of IKEA</h1>
-                                <p className='text-xl'>Weve come a long way since our early days in Älmhult, Sweden, but IKEA founder Ingvar Kamprad’s dream to create a better life for as many people as possible – whatever the size of their wallet – is and will always be our driving force.</p>
+                                <p className='text-xl'>Weve come a long way since our early days in Älmhult, Sweden, but IKEA founder Ingvar Kamprads dream to create a better life for as many people as possible – whatever the size of their wallet – is and will always be our driving force.</p>
                             </div>
                         </div>
                     </div>

@@ -9,22 +9,6 @@ import VideoContent from '@/components/core/videoContent'
 const Page = () => {
     let pathName = usePathname()
     pathName = pathName.slice(-3)
-    console.log(pathName)
-
-    const historyData = [
-        {
-            image: 'https://ikeamuseum.com/wp-content/uploads/2021/05/fd-1950s-productstories-featured-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D',
-            title: 'Product Stories 1950s',
-        },
-        {
-            image: 'https://ikeamuseum.com/wp-content/uploads/2021/06/im-1950-interiors-01-ft-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D',
-            title: 'Life at home 1950s',
-        },
-        {
-            image: 'https://ikeamuseum.com/wp-content/uploads/2023/06/1951-1-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D',
-            title: '1950s IKEA catalogues',
-        },
-    ];
 
     const flatpackData = [
         {
