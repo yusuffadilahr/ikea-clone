@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import React from 'react'
 import { BsArrowRightCircleFill } from 'react-icons/bs'
 import { PiArrowBendRightUp } from 'react-icons/pi'
@@ -9,7 +10,7 @@ const CampaignSection = () => {
         <section className='w-full h-fit md:h-[600px] flex flex-col md:flex-row gap-5 pt-5 pb-5'>
             <div className="flex w-full h-full">
                 <div className="flex relative w-full h-full">
-                    <img src="https://www.ikea.com/global/en/images/PH_198830_49466cdb3e.jpg" alt="img-banner" className="w-full h-[60vh] md:h-full object-cover rounded-xl" />
+                    <Image width={500} height={500} src="https://www.ikea.com/global/en/images/PH_198830_49466cdb3e.jpg" alt="img-banner" className="w-full h-[60vh] md:h-full object-cover rounded-xl" />
                     <button className="absolute bottom-10 left-5 text-white">
                         <p className="font-semibold">The BRÄNNBOLL collection</p>
                         <h1 className="md:text-3xl lg:text-5xl font-bold">Ready for gaming...</h1>

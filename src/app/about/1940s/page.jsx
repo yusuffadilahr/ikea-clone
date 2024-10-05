@@ -42,7 +42,7 @@ const Page = () => {
                             <source src='https://ikeamuseum.com/wp-content/uploads/2021/05/IKEA_40s_ENG_MASTER_02_SUB_1.mp4?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D' type='video/mp4' />
                         </video>
                         <div className='text-center w-full flex flex-col justify-center items-center'>
-                            <h1 className='font-bold text-2xl py-3'>The swinging ’40s</h1>
+                            <h1 className='font-bold text-2xl py-3'>The swinging 40s</h1>
                             <p className='max-w-[60%]'>The war ends and neutral Sweden gets a head start, boosting its economy and sense of community. From playing shop as a small boy, Ingvar Kamprad founds IKEA and a new era is dawning.</p>
                         </div>
                     </div>

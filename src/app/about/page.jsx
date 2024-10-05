@@ -52,7 +52,7 @@ const AboutPage = ({ children, hiddenContent='block', px='px-5', year }) => {
                             <Image alt='founder' className='w-full object-cover rounded-xl h-full' src={'https://www.ikea.com/global/en/images/ingvarwithchair_28c4a64ed2.jpg?f=sg'} width={500} height={500} />
                             <div className='flex flex-col max-w-[70%] justify-center mt-36 items-center w-full'>
                                 <h1 className='flex justify-normal items-center mb-8 w-full font-bold text-5xl'>The story of IKEA</h1>
-                                <p className='text-xl'>We’ve come a long way since our early days in Älmhult, Sweden, but IKEA founder Ingvar Kamprad’s dream to create a better life for as many people as possible – whatever the size of their wallet – is and will always be our driving force.</p>
+                                <p className='text-xl'>We've come a long way since our early days in Älmhult, Sweden, but IKEA founder Ingvar Kamprad’s dream to create a better life for as many people as possible – whatever the size of their wallet – is and will always be our driving force.</p>
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,7 @@ const AboutPage = ({ children, hiddenContent='block', px='px-5', year }) => {
                                 <p className='max-w-[65%]'>IKEA was first registered as a trading company on the 28th of July, 1943 when Ingvar was just 17 years old. In his early years as an entrepreneur, Ingvar imported things like pens, watches and nylon stockings; adding furniture to the range in 1948.</p>
                                 <div className='w-full justify-center items-center flex'>
                                     <button className='border-y flex justify-between py-3 w-full max-w-[65%]'>
-                                        Dive into IKEA's full history at IKEA Museum
+                                        Dive into IKEA&apos;s full history at IKEA Museum
                                         <BsArrowRight className='w-5 h-5'/>
                                         </button>
                                 </div>
@@ -86,7 +86,7 @@ const AboutPage = ({ children, hiddenContent='block', px='px-5', year }) => {
                                 <p className='pr-10'>High costs and damage rates when transporting furniture via mail order were constant thorns in Ingvar’s side. Although flatpack furniture already existed, it hadn’t really taken off in Sweden yet. In 1953, IKEA adopted the flatpack. Self-assembly products proved popular and to be the solution to those costly transportation problems.</p>
                                 <div className="flex flex-col justify-center items-center w-full">
                                     <h1 className="text-base md:text-xl lg:text-xl font-bold pt-10">
-                                        " Most things still remain to be done. A glorious future! "
+                                       &quot; Most things still remain to be done. A glorious future! &quot;
                                     </h1>
                                     <p className="flex flex-col justify-start w-full lg:px-7 pt-6 font-bold">- Ingvar Kamprad
                                         <span className="font-normal">IKEA founder</span>

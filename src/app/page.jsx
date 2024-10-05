@@ -136,7 +136,7 @@ export default function Home() {
               <p>High costs and damage rates when transporting furniture via mail order were constant thorns in Ingvar’s side. Although flatpack furniture already existed, it hadn’t really taken off in Sweden yet. In 1953, IKEA adopted the flatpack. Self-assembly products proved popular and to be the solution to those costly transportation problems.</p>
               <div className="flex flex-col justify-center items-center w-full">
                 <h1 className="text-base md:text-xl lg:text-xl font-bold pt-10">
-                  " Most things still remain to be done. A glorious future! "
+                  &quot; Most things still remain to be done. A glorious future! &quot;
                 </h1>
                 <p className="flex flex-col justify-start w-full lg:px-7 pt-6 font-bold">- Ingvar Kamprad
                   <span className="font-normal">IKEA founder</span>

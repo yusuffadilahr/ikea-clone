@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import React from 'react'
 
 const ProductSection = () => {
@@ -18,7 +19,7 @@ const ProductSection = () => {
     <div className="grid grid-cols-2 lg:grid-cols-4 w-full gap-5 h-fit mb-10">
       {produkList.map((item, i) => (
         <div className="w-full relative" key={i}>
-          <img src={item.name} alt="Produk list" className="h-[40vh] md:h-[60vh] w-full object-cover rounded-xl" />
+          <Image width={500} height={500} src={item.name} alt="Produk list" className="h-[40vh] md:h-[60vh] w-full object-cover rounded-xl" />
           <h1 className="font-semibold text-sm">{item.caption}</h1>
           <button className="font-bold text-base md:text-2xl hover:text-neutral-600">Learn More...</button>
         </div>
@@ -26,7 +27,7 @@ const ProductSection = () => {
     </div>
     <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-5">
       <div className="h-[80vh] w-full relative flex">
-        <img src='https://www.ikea.com/global/en/images/PH_199178_7298adbed8.jpg?f=xxxl' alt="produk-img" className="w-full h-full object-cover rounded-xl" />
+        <Image width={500} height={500} src={'https://www.ikea.com/global/en/images/PH_199178_7298adbed8.jpg?f=xxxl'} alt="produk-img" className="w-full h-full object-cover rounded-xl" />
         <p className="absolute flex bottom-20 pl-5 text-white font-semibold text-base md:text-lg">
           New reasons to love rattan
         </p>
@@ -35,7 +36,7 @@ const ProductSection = () => {
         </h1>
       </div>
       <div className="h-[80vh] w-full relative flex">
-        <img src='https://www.ikea.com/global/en/images/Bedroom_1971_1b40a9c63c.jpg?f=xxxl' alt="produk-img" className="w-full h-full object-cover rounded-xl" />
+        <Image width={500} height={500} src={'https://www.ikea.com/global/en/images/Bedroom_1971_1b40a9c63c.jpg?f=xxxl'} alt="produk-img" className="w-full h-full object-cover rounded-xl" />
         <div className="absolute flex pl-5 bottom-10 flex-col">
           <p className="text-white font-semibold text-base md:text-lg">
             New reasons to love rattan
