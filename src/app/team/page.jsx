@@ -27,7 +27,7 @@ const Page = () => {
     }, [])
 
     return (
-        <main className='w-full h-fit pt-28 flex flex-col justify-center bg-white text-black'>
+        <main className='w-full h-fit md:pt-20 pt-0 lg:pt-28 flex flex-col justify-center bg-white text-black'>
             <section className='w-full h-fit'>
                 <Image alt='team' className='w-full h-[60vh] object-cover' src={'https://www.inter.ikea.com/-/media/interikea/managementstructure_jan_interikeacom_banner_ph180523-0033bbab/managementstructure_jan_interikeacom_banner_ph180523-0033bbab-desktop-banner-image?rev=bdb2eb41e1bc4090b0804e3329b89478'} width={5000} height={5000} />
             </section>
