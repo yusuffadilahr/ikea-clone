@@ -13,6 +13,10 @@ const NavbarCustom = () => {
     const handleOpenSideBar = () => {
         setSideBarOpen(!sideBarOpen)
     }
+
+    const closeSideBar = () => {
+        setSideBarOpen(false)
+    }
     return (
         <>
             <nav className='w-full h-14 md:h-20 bg-white lg:h-24 flex items-center z-20 top-0 fixed'>
@@ -33,7 +37,7 @@ const NavbarCustom = () => {
                         </button>
                         :
                         <button onClick={handleOpenSideBar} className="flex lg:hidden mr-5 text-black">
-                          <IoMdCloseCircleOutline/>
+                            <IoMdCloseCircleOutline />
                         </button>
                     }
 
@@ -43,7 +47,7 @@ const NavbarCustom = () => {
             {sideBarOpen ?
                 ''
                 :
-                <aside className='w-[80%] lg:hidden top-14 lg:top-20 py-8 fixed flex flex-col z-20 right-0 h-screen bg-white px-5'>
+                <aside onMouseLeave={closeSideBar} className='w-[80%] lg:hidden top-14 lg:top-20 py-8 fixed flex flex-col z-20 right-0 h-screen bg-white px-5'>
                     <section className="w-full h-fit rounded-lg gap-1 flex flex-col">
                         <div className="w-full h-[10vh] bg-yellow-400 rounded-t-lg flex justify-center items-center text-black">
                             <button className='md:text-2xl h-32 text-lg flex items-center font-bold hover:text-neutral-600'>Go Shopping
