@@ -21,7 +21,7 @@ const AboutPage = ({ children, hiddenContent='block', px='px-5', year }) => {
 
     return (
         <>
-            <main className={`w-full h-fit flex flex-col ${px} mt-14`}>
+            <main className={`w-full h-fit flex flex-col ${px} mt-14 bg-white text-black`}>
 
                 <section className='w-full h-fit flex-col justify-center flex'>
                     <div className='flex justify-center h-fit pt-5 md:pt-20 w-full flex-col items-center'>
