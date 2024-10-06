@@ -1,17 +1,14 @@
 'use client'
 import CardContent from '@/components/core/cardContent'
 import CardBodyImage from '@/components/core/cardContent/cardBodyImage'
-import { setUserData } from '@/redux/slice/usersSlice'
-import { useMutation } from '@tanstack/react-query'
-import axios from 'axios'
 import Image from 'next/image'
-import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import React from 'react'
+import { useSelector } from 'react-redux'
 
 
 const Page = () => {
     const dataUser = useSelector((state) => state.user.users)
-    
+
     return (
         <main className='w-full h-fit md:pt-20 pt-0 lg:pt-28 flex flex-col justify-center bg-white text-black'>
             <section className='w-full h-fit'>
