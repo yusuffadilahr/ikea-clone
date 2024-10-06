@@ -10,22 +10,8 @@ import { useDispatch, useSelector } from 'react-redux'
 
 
 const Page = () => {
-    const dispatch = useDispatch()
     const dataUser = useSelector((state) => state.user.users)
-
-    const { mutate: userDataFetch } = useMutation({
-        mutationFn: async () => {
-            const res = await axios.get('https://randomuser.me/api/?results=6')
-            const response = res.data.results
-            dispatch(setUserData(response))
-            return response
-        }
-    })
-
-    useEffect(() => {
-        userDataFetch()
-    }, [])
-
+    
     return (
         <main className='w-full h-fit md:pt-20 pt-0 lg:pt-28 flex flex-col justify-center bg-white text-black'>
             <section className='w-full h-fit'>
