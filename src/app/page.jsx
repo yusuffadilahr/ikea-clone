@@ -11,7 +11,7 @@ import VideoContent from "@/components/core/videoContent";
 
 export default function Home() {
   return (
-    <main className='w-full h-fit flex flex-col px-5 bg-white'>
+    <main className='w-full h-fit flex flex-col px-5 bg-white dark:bg-white'>
 
       {/* Hero Section */}
       <HeroSection />
