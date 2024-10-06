@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const FooterCustom = () => {
     return (
-        <footer className="bottom-0 h-fit w-full pt-32 bg-white">
+        <footer className="bottom-0 h-fit w-full pt-32 bg-white text-black">
             <div className="w-full flex justify-center items-center flex-col gap-10 mb-20">
                 <h1 className="font-bold text-sm md:text-2xl">A world of inspiration for your home</h1>
                 <Image width={500} height={500} src="https://www.ikea.com/global/assets/logos/brand/ikea.svg" alt="logo-company" className='w-20 md:w-[150px] ml-5' />
