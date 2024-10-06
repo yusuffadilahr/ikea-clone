@@ -16,7 +16,7 @@ const AboutUs = () => {
                     <button className="border text-xs rounded-full mb-5 md:mb-0 px-1 py-2 mt-5 md:mt-10 border-black hover:border">Learn more about the history of IKEA</button>
                 </div>
                 <div className="w-full md:w-1/2 lg:w-full h-full">
-                    <Image width={500} height={500} src='https://www.ikea.com/ext/ingkadam/m/558f842846a6fa1b/original/PX000263-crop002.jpg?f=m' alt="about-section" className="w-full md:w-fit lg:w-full h-[70vh] object-left object-cover" />
+                    <Image width={500} height={500} src='https://www.ikea.com/ext/ingkadam/m/558f842846a6fa1b/original/PX000263-crop002.jpg?f=m' alt="about-section" className="w-full md:w-fit lg:pr-10 lg:w-full h-[70vh] object-left object-cover" />
                 </div>
             </div>
             <div className="w-full flex mt-10 px-2 lg:px-10">
@@ -24,7 +24,7 @@ const AboutUs = () => {
                     <div>
                         <Image width={500} height={500} src='https://www.ikea.com/ext/ingkadam/m/c391306500d28d8/original/PE117762-crop001.jpg?f=m' alt="about-section" className="w-full h-[80vh] object-cover" />
                     </div>
-                    <div className="flex flex-col lg:pl-6 justify-center w-full">
+                    <div className="flex flex-col lg:px-6 justify-center w-full">
                         <h1 className="font-bold text-lg md:text-xl lg:text-2xl mb-5">The flatpack revolution begins</h1>
                         <p>High costs and damage rates when transporting furniture via mail order were constant thorns in Ingvar’s side. Although flatpack furniture already existed, it hadn’t really taken off in Sweden yet. In 1953, IKEA adopted the flatpack. Self-assembly products proved popular and to be the solution to those costly transportation problems.</p>
                         <div className="flex flex-col justify-center items-center w-full">
