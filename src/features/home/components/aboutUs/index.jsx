@@ -3,7 +3,7 @@ import React from 'react'
 
 const AboutUs = () => {
     return (
-        <section className="w-full h-fit pt-2">
+        <section className="w-full h-fit pt-2 text-black">
             <div className="pt-10 px-2 lg:px-10">
                 <h1 className="text-xl md:text-4xl mb-10 font-bold border-neutral-500">About Us & History</h1>
                 <p className="w-full lg:max-w-[68vw] mb-10">What started as a tiny mail order company in rural Sweden has now become a global home furnishing brand that brings affordability, design and comfort to people all over the world. We may have come a long way since our humble beginnings, but our vision remains the same: to create a better everyday life for the many people. Here you can explore the IKEA story and learn more about our heritage and the events that shaped us.</p>

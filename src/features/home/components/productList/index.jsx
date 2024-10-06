@@ -17,8 +17,8 @@ const ProductList = () => {
                 {produkList.map((item, i) => (
                     <div className="w-full relative" key={i}>
                         <Image src={item.name} width={500} height={500} alt="Produk list" className="h-[40vh] md:h-[60vh] w-full object-cover rounded-xl" />
-                        <h1 className="font-semibold text-sm">{item.caption}</h1>
-                        <Link href='/products' className="font-bold text-base md:text-2xl hover:text-neutral-600">Learn More...</Link>
+                        <h1 className="font-semibold text-sm text-black">{item.caption}</h1>
+                        <Link href='/products' className="font-bold text-base md:text-2xl text-black hover:text-neutral-600">Learn More...</Link>
                     </div>
                 ))}
             </div>

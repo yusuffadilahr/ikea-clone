@@ -14,7 +14,7 @@ const Testimonial = () => {
         { id: 3, name: 'Mola', img: tester3, rate: `This piece features a classic design that fits perfectly with my office decor. The spacious surface provides ample room for my laptop and documents. Assembly was fairly easy, although I needed help lifting it because it's quite heavy. The only downside is that the drawer is a bit narrow, but overall, I'm satisfied with the quality.` },
     ]
     return (
-        <section className='w-full h-fit p-5 bg-slate-300 rounded-xl mt-10 flex justify-center items-center'>
+        <section className='w-full h-fit p-5 bg-slate-300 text-black rounded-xl mt-10 flex justify-center items-center'>
             <div className="w-full h-full flex flex-col lg:flex-row lg:flex">
                 <div className="w-full lg:w-7/12 flex flex-col items-center justify-center pb-5 md:pb-10 lg:pb-0">
                     <h1 className="font-bold text-lg md:text-xl lg:text-4xl xl:text-5xl ">Testimonial</h1>
