@@ -10,7 +10,7 @@ const CampaignSection = () => {
     <section className='w-full h-fit md:h-[600px] flex flex-col md:flex-row gap-5 pt-5 pb-5'>
     <div className="flex w-full h-full">
       <div className="flex relative w-full h-full">
-        <Image priority src={photos} alt="img-banner" className="w-full h-[60vh] md:h-full object-cover rounded-xl" />
+        <Image src={photos} alt="img-banner" className="w-full h-[60vh] md:h-full object-cover rounded-xl" />
         <button className="absolute flex flex-col bottom-10 left-5 dark:text-white text-white">
           <p className="font-semibold">The BRÄNNBOLL collection</p>
           <h1 className="md:text-3xl lg:text-5xl font-bold">Ready for gaming...</h1>
