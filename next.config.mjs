@@ -11,6 +11,16 @@ const nextConfig = {
                 pathname: '**',
                 hostname: 'ikeamuseum.com',
                 protocol: 'https'
+            },
+            {
+                pathname: '**',
+                hostname: 'randomuser.me',
+                protocol: 'https'
+            },
+            {
+                pathname: '**',
+                hostname: 'www.inter.ikea.com',
+                protocol: 'https'
             }
         ],
         formats: ['image/avif', 'image/webp']

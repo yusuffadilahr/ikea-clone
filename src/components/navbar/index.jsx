@@ -24,7 +24,7 @@ const NavbarCustom = () => {
                         <Link href='/' className='hover:font-bold hidden lg:flex justify-center items-center text-black'>Home</Link>
                         <Link href='/about' className='hover:font-bold lg:flex items-center hidden text-black'>About Us</Link>
                         <Link href='/products' className='hover:font-bold hidden lg:flex items-center text-black'>Products</Link>
-                        <Link href='our-team' className='hover:font-bold hidden lg:flex items-center text-black'>Our Team</Link>
+                        <Link href='/team' className='hover:font-bold hidden lg:flex items-center text-black'>Our Team</Link>
                     </div>
 
                     {sideBarOpen ?
@@ -73,7 +73,7 @@ const NavbarCustom = () => {
                         </Link>
                     </section>
                     <section className='w-full mt-10 flex items-end justify-center'>
-                        <h1 className='text-neutral-500 text-sm'>&copy;cloned by Yusuf Fadilah Rukmana</h1>
+                        <h1 className='text-neutral-500 text-sm flex items-center'>&copy; cloned by Yusuf Fadilah Rukmana</h1>
                     </section>
                 </aside>
             }
