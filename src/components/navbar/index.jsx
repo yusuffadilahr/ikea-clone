@@ -21,18 +21,18 @@ const NavbarCustom = () => {
                         <div className='w-[68px] md:w-[80px] lg:w-[90px] ml-5'>
                             <Image src="https://www.ikea.com/global/assets/logos/brand/ikea.svg" alt="logo-company" width={1000} height={1000} />
                         </div>
-                        <Link href='/' className='hover:font-bold hidden lg:flex justify-center items-center'>Home</Link>
-                        <Link href='/about' className='hover:font-bold lg:flex items-center hidden'>About Us</Link>
-                        <Link href='/products' className='hover:font-bold hidden lg:flex items-center'>Products</Link>
-                        <Link href='our-team' className='hover:font-bold hidden lg:flex items-center'>Our Team</Link>
+                        <Link href='/' className='hover:font-bold hidden lg:flex justify-center items-center text-black'>Home</Link>
+                        <Link href='/about' className='hover:font-bold lg:flex items-center hidden text-black'>About Us</Link>
+                        <Link href='/products' className='hover:font-bold hidden lg:flex items-center text-black'>Products</Link>
+                        <Link href='our-team' className='hover:font-bold hidden lg:flex items-center text-black'>Our Team</Link>
                     </div>
 
                     {sideBarOpen ?
-                        <button onClick={handleOpenSideBar} className="flex lg:hidden mr-5">
+                        <button onClick={handleOpenSideBar} className="flex lg:hidden mr-5 text-black">
                             <CiMenuBurger />
                         </button>
                         :
-                        <button onClick={handleOpenSideBar} className="flex lg:hidden mr-5">
+                        <button onClick={handleOpenSideBar} className="flex lg:hidden mr-5 text-black">
                           <IoMdCloseCircleOutline/>
                         </button>
                     }
@@ -45,12 +45,12 @@ const NavbarCustom = () => {
                 :
                 <aside className='w-[80%] lg:hidden top-14 lg:top-20 py-8 fixed flex flex-col z-20 right-0 h-screen bg-white px-5'>
                     <section className="w-full h-fit rounded-lg gap-1 flex flex-col">
-                        <div className="w-full h-[10vh] bg-yellow-400 rounded-t-lg flex justify-center items-center">
+                        <div className="w-full h-[10vh] bg-yellow-400 rounded-t-lg flex justify-center items-center text-black">
                             <button className='md:text-2xl h-32 text-lg flex items-center font-bold hover:text-neutral-600'>Go Shopping
                                 <BsArrowRightCircleFill className="ml-5 md:ml-4 lg:ml-10" />
                             </button>
                         </div>
-                        <Link href='https://ikea.com' className="w-full h-16 md:h-16 bg-yellow-400 hover:bg-yellow-200 rounded-b-lg text-sm md:text-lg flex justify-start pl-10 items-center">
+                        <Link href='https://ikea.com' className="w-full h-16 md:h-16 text-black hover:text-neutral-600 bg-yellow-400 hover:bg-yellow-200 rounded-b-lg text-sm md:text-lg flex justify-start pl-10 items-center">
                             source: <span className='font-bold ml-1'>IKEA.com</span> <PiArrowBendRightUp />
                         </Link>
                     </section>
