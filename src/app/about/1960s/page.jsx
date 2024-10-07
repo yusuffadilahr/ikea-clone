@@ -10,7 +10,6 @@ import CardBodyImage from '@/components/core/cardContent/cardBodyImage'
 const Page = () => {
     let pathName = usePathname()
     pathName = pathName.slice(-3)
-    console.log(pathName)
 
     const historyData = [
         {
@@ -105,7 +104,7 @@ const Page = () => {
                         <div className='grid grid-cols-3 w-full gap-3'>
                             {mediaData.map((item, i) => (
                                 <div key={i} className='flex flex-col h-[40vh]'>
-                                    <Image alt={item.alt} src={item.src} width={item.width} height={item.height} className='rounded-xl object-cover w-full flex' />
+                                    <Image loading="lazy" alt={item.alt} src={item.src} width={item.width} height={item.height} className='rounded-xl object-cover w-full flex' />
                                     <h1 className='font-bold text-lg py-2'>{item.title}</h1>
                                 </div>
                             ))}
@@ -147,27 +146,27 @@ const Page = () => {
                             {/* Mobile Device */}
                             <div className='md:hidden grid grid-cols-2 gap-3'>
                                 <div className='flex flex-col'>
-                                    <Image alt='history' src={'https://ikeamuseum.com/wp-content/uploads/2021/05/ikea-life-at-home-living-room-1970s-768x432.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[20vh] w-full flex' />
+                                    <Image loading="lazy" alt='history' src={'https://ikeamuseum.com/wp-content/uploads/2021/05/ikea-life-at-home-living-room-1970s-768x432.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[20vh] w-full flex' />
                                     <h1 className='font-bold text-sm py-2'>Life at home 1950s</h1>
                                 </div>
                                 <div className='flex flex-col'>
-                                    <Image alt='history' src={'https://ikeamuseum.com/wp-content/uploads/2023/06/1972-1-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[20vh] w-full flex' />
+                                    <Image loading="lazy" alt='history' src={'https://ikeamuseum.com/wp-content/uploads/2023/06/1972-1-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[20vh] w-full flex' />
                                     <h1 className='font-bold text-sm py-2'>1950s IKEA catalogues</h1>
                                 </div>
                             </div>
 
                             <div className='flex flex-col h-[40vh]'>
-                                <Image alt='history' src={'https://ikeamuseum.com/wp-content/uploads/2021/05/fd-1970s-productstories-featured-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={2000} height={2000} className='rounded-xl object-cover md:h-[30vh] h-[50vh] w-full flex' />
+                                <Image loading="lazy" alt='history' src={'https://ikeamuseum.com/wp-content/uploads/2021/05/fd-1970s-productstories-featured-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={2000} height={2000} className='rounded-xl object-cover md:h-[30vh] h-[50vh] w-full flex' />
                                 <h1 className='font-bold md:text-base lg:text-sm text-sm  py-2'>Product Stories 1950s</h1>
                             </div>
 
                             {/* Ukuran Tablet Keatas */}
                             <div className='hidden md:flex flex-col'>
-                                <Image alt='history' src={'https://ikeamuseum.com/wp-content/uploads/2021/05/ikea-life-at-home-living-room-1970s-768x432.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[30vh] w-full flex' />
+                                <Image loading="lazy" alt='history' src={'https://ikeamuseum.com/wp-content/uploads/2021/05/ikea-life-at-home-living-room-1970s-768x432.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[30vh] w-full flex' />
                                 <h1 className='font-bold md:text-base lg:text-lg py-2'>Life at home 1950s</h1>
                             </div>
                             <div className=' hidden md:flex flex-col'>
-                                <Image alt='history' src={'https://ikeamuseum.com/wp-content/uploads/2023/06/1972-1-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[30vh] w-full flex' />
+                                <Image loading="lazy" alt='history' src={'https://ikeamuseum.com/wp-content/uploads/2023/06/1972-1-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[30vh] w-full flex' />
                                 <h1 className='font-bold md:text-base lg:text-lg py-2'>1950s IKEA catalogues</h1>
                             </div>
                         </div>
@@ -178,7 +177,7 @@ const Page = () => {
                             {historyData.map((history, i) => (
                                 <div className='flex justify-start px-4 lg:px-0 flex-row gap-5 items-center w-full' key={i}>
                                     <div className='w-full flex justify-center'>
-                                        <Image alt='history' src={history.imageUrl} width={1000} height={1000} className='rounded-xl object-cover w-full lg:w-[70%] h-[20vh] flex' />
+                                        <Image loading="lazy" alt='history' src={history.imageUrl} width={1000} height={1000} className='rounded-xl object-cover w-full lg:w-[70%] h-[20vh] flex' />
                                     </div>
                                     <div className='w-full'>
                                         <h1 className='font-bold text-sm md:text-lg text-white'>{history.title}</h1>

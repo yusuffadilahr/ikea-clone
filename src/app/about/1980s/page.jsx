@@ -33,27 +33,27 @@ const Page = () => {
                     {/* Mobile Device */}
                     <div className='md:hidden grid grid-cols-2 gap-3'>
                         <div className='flex flex-col'>
-                            <Image alt='history' src={'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2021/06/im-1980-interiors-01-ft-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[20vh] w-full flex' />
+                            <Image loading="lazy" alt='history' src={'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2021/06/im-1980-interiors-01-ft-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[20vh] w-full flex' />
                             <h1 className='font-bold text-sm py-2'>Life at home 1950s</h1>
                         </div>
                         <div className='flex flex-col'>
-                            <Image alt='history' src={'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2023/06/1980-1-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[20vh] w-full flex' />
+                            <Image loading="lazy" alt='history' src={'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2023/06/1980-1-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[20vh] w-full flex' />
                             <h1 className='font-bold md:text-lg text-sm py-2'>1950s IKEA catalogues</h1>
                         </div>
                     </div>
 
                     <div className='flex flex-col h-[40vh]'>
-                        <Image alt='history' src={'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2021/05/fd-1980s-productstories-featured-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={2000} height={2000} className='rounded-xl object-cover md:h-[30vh] h-[50vh] w-full flex' />
+                        <Image loading="lazy" alt='history' src={'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2021/05/fd-1980s-productstories-featured-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={2000} height={2000} className='rounded-xl object-cover md:h-[30vh] h-[50vh] w-full flex' />
                         <h1 className='font-bold md:text-base lg:text-lg text-sm  py-2'>Product Stories 1950s</h1>
                     </div>
 
                     {/* Ukuran Tablet Keatas */}
                     <div className='hidden md:flex flex-col'>
-                        <Image alt='history' src={'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2021/06/im-1980-interiors-01-ft-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[30vh] w-full flex' />
+                        <Image loading="lazy" alt='history' src={'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2021/06/im-1980-interiors-01-ft-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[30vh] w-full flex' />
                         <h1 className='font-bold md:text-base lg:text-lg py-2'>Life at home 1950s</h1>
                     </div>
                     <div className=' hidden md:flex flex-col'>
-                        <Image alt='history' src={'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2023/06/1980-1-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[30vh] w-full flex' />
+                        <Image loading="lazy" alt='history' src={'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2023/06/1980-1-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[30vh] w-full flex' />
                         <h1 className='font-bold md:text-base lg:text-lg py-2'>1950s IKEA catalogues</h1>
                     </div>
                 </CardGridResponsive>
@@ -75,32 +75,32 @@ const Page = () => {
                     {/* Mobile Device */}
                     <div className='md:hidden grid grid-cols-2 gap-3'>
                         <div className='flex flex-col'>
-                            <Image alt='history' src={'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2021/04/group-photo-ikea-gothenburg-staff-strength-80-1980s-768x432.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[20vh] w-full flex' />
+                            <Image loading="lazy" alt='history' src={'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2021/04/group-photo-ikea-gothenburg-staff-strength-80-1980s-768x432.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[20vh] w-full flex' />
                             <h1 className='font-bold text-sm py-2'>Life at home 1950s</h1>
                         </div>
                         <div className='flex flex-col'>
-                            <Image alt='history' src={'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2023/12/im-1980-cushion-filling-in-a-tube-01-ft-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[20vh] w-full flex' />
+                            <Image loading="lazy" alt='history' src={'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2023/12/im-1980-cushion-filling-in-a-tube-01-ft-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[20vh] w-full flex' />
                             <h1 className='font-bold md:text-lg text-sm py-2'>1950s IKEA catalogues</h1>
                         </div>
                     </div>
 
                     <div className='flex flex-col h-[40vh]'>
-                        <Image alt='history' src={'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2021/05/ikea-sofa-klippan-red-768x489.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={2000} height={2000} className='rounded-xl object-cover md:h-[30vh] h-[50vh] w-full flex' />
+                        <Image loading="lazy" alt='history' src={'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2021/05/ikea-sofa-klippan-red-768x489.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={2000} height={2000} className='rounded-xl object-cover md:h-[30vh] h-[50vh] w-full flex' />
                         <h1 className='font-bold md:text-base lg:text-lg text-sm  py-2'>Product Stories 1950s</h1>
                     </div>
 
                     {/* Ukuran Tablet Keatas */}
                     <div className='hidden md:flex flex-col'>
-                        <Image alt='history' src={'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2021/04/group-photo-ikea-gothenburg-staff-strength-80-1980s-768x432.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[30vh] w-full flex' />
+                        <Image loading="lazy" alt='history' src={'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2021/04/group-photo-ikea-gothenburg-staff-strength-80-1980s-768x432.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[30vh] w-full flex' />
                         <h1 className='font-bold md:text-base lg:text-lg py-2'>Life at home 1950s</h1>
                     </div>
                     <div className=' hidden md:flex flex-col'>
-                        <Image alt='history' src={'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2023/12/im-1980-cushion-filling-in-a-tube-01-ft-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[30vh] w-full flex' />
+                        <Image loading="lazy" alt='history' src={'https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2023/12/im-1980-cushion-filling-in-a-tube-01-ft-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[30vh] w-full flex' />
                         <h1 className='font-bold md:text-base lg:text-lg py-2'>1950s IKEA catalogues</h1>
                     </div>
                 </CardGridResponsive>
 
-                <ImageContent
+                <Image loading="lazy"Content
                     bgColor='bg-yellow-400'
                     src='https://ikeamuseum.com/blobiicsikeamu4941109594/wp-content/uploads/2021/05/80s_ikeaandadvertising.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'
                     title='IKEA and advertising'

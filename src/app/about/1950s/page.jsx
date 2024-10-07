@@ -28,27 +28,27 @@ const Page = () => {
                 {/* Mobile Device */}
                 <div className='md:hidden grid grid-cols-2 gap-3'>
                     <div className='flex flex-col'>
-                        <Image alt='history' src={'https://ikeamuseum.com/wp-content/uploads/2021/06/im-1950-interiors-01-ft-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[20vh] w-full flex' />
+                        <Image loading="lazy" alt='history' src={'https://ikeamuseum.com/wp-content/uploads/2021/06/im-1950-interiors-01-ft-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[20vh] w-full flex' />
                         <h1 className='font-bold text-sm py-2'>Life at home 1950s</h1>
                     </div>
                     <div className='flex flex-col'>
-                        <Image alt='history' src={'https://ikeamuseum.com/wp-content/uploads/2023/06/1951-1-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-top object-cover h-[20vh] w-full flex' />
+                        <Image loading="lazy" alt='history' src={'https://ikeamuseum.com/wp-content/uploads/2023/06/1951-1-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-top object-cover h-[20vh] w-full flex' />
                         <h1 className='font-bold md:text-lg text-sm py-2'>1950s IKEA catalogues</h1>
                     </div>
                 </div>
 
                 <div className='flex flex-col h-[40vh]'>
-                    <Image alt='history' src={'https://ikeamuseum.com/wp-content/uploads/2021/05/fd-1950s-productstories-featured-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={2000} height={2000} className='rounded-xl object-cover md:h-[30vh] h-[50vh] w-full flex' />
+                    <Image loading="lazy" alt='history' src={'https://ikeamuseum.com/wp-content/uploads/2021/05/fd-1950s-productstories-featured-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={2000} height={2000} className='rounded-xl object-cover md:h-[30vh] h-[50vh] w-full flex' />
                     <h1 className='font-bold md:text-base lg:text-lg text-sm  py-2'>Product Stories 1950s</h1>
                 </div>
 
                 {/* Ukuran Tablet Keatas */}
                 <div className='hidden md:flex flex-col'>
-                    <Image alt='history' src={'https://ikeamuseum.com/wp-content/uploads/2021/06/im-1950-interiors-01-ft-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[30vh] w-full flex' />
+                    <Image loading="lazy" alt='history' src={'https://ikeamuseum.com/wp-content/uploads/2021/06/im-1950-interiors-01-ft-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-cover h-[30vh] w-full flex' />
                     <h1 className='font-bold md:text-base lg:text-lg py-2'>Life at home 1950s</h1>
                 </div>
                 <div className=' hidden md:flex flex-col'>
-                    <Image alt='history' src={'https://ikeamuseum.com/wp-content/uploads/2023/06/1951-1-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-top object-cover h-[30vh] w-full flex' />
+                    <Image loading="lazy" alt='history' src={'https://ikeamuseum.com/wp-content/uploads/2023/06/1951-1-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} width={1000} height={1000} className='rounded-xl object-top object-cover h-[30vh] w-full flex' />
                     <h1 className='font-bold md:text-base lg:text-lg py-2'>1950s IKEA catalogues</h1>
                 </div>
             </CardGridResponsive>
@@ -66,7 +66,7 @@ const Page = () => {
                         <div className='grid grid-cols-1 md:grid-cols-2 w-full gap-3'>
                             {flatpackData.map((item, i) => (
                                 <div className='flex flex-col h-full' key={i}>
-                                    <Image alt='history' src={item.image} width={1000} height={1000} className='rounded-xl object-cover h-96 w-full flex' />
+                                    <Image loading="lazy" alt='history' src={item.image} width={1000} height={1000} className='rounded-xl object-cover h-96 w-full flex' />
                                     <h1 className='font-bold text-lg py-2'>{item.title}</h1>
                                 </div>
                             ))}
@@ -75,7 +75,7 @@ const Page = () => {
                 </div>
                 <div className='mt-8 w-full h-fit pb-20 pt-32 flex justify-center items-center bg-amber-100 px-0'>
                     <div className='w-full h-full max-w-[70%] flex flex-col justify-center items-center'>
-                        <Image src={'https://ikeamuseum.com/wp-content/uploads/2022/09/im-1950-first-store-01-ft-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} alt='founder' width={500} height={500} className='w-full border h-fit rounded-xl' />
+                        <Image loading="lazy" src={'https://ikeamuseum.com/wp-content/uploads/2022/09/im-1950-first-store-01-ft-768x576.jpg?sv=2022-11-02&ss=bf&srt=o&sp=rwact&se=2032-07-19T20:53:53Z&st=2023-07-19T00:53:53Z&spr=https,http&sig=CbW5rmYp6FrCBT77fuGZVaQIyQ6kOS0Coe6AbA3prrw%3D'} alt='founder' width={500} height={500} className='w-full border h-fit rounded-xl' />
                         <div className='w-full flex flex-col justify-start'>
                             <h1 className='font-bold text-2xl py-3'>The first IKEA store</h1>
                             <p className=''>When IKEA opened its new furniture showroom in Älmhult in 1958, everyone was there: the county governor, the chairman of the municipal board, along with press and critics from Stockholm, all curious to see the latest move from furniture rebel Ingvar Kamprad...</p>

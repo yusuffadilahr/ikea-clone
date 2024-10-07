@@ -25,7 +25,7 @@ const Testimonial = () => {
                         {testimonialArray.map((item, i) => (
                             <div className="w-full bg-white h-fit px-5 pb-5" key={i}>
                                 <div className="w-full pt-3 flex items-center flex-row gap-5 mb-3">
-                                    <Image width={500} height={500} src={item.img} alt="" className="w-10 h-10 rounded-full object-cover" />
+                                    <Image loading="lazy" width={500} height={500} src={item.img}  className="w-10 h-10 rounded-full object-cover" />
                                     <h1 className="font-bold">{item.name}</h1>
                                 </div>
                                 <div className="w-full h-fit md:h-52 flex justify-center items-center">

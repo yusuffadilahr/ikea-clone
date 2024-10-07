@@ -23,7 +23,7 @@ const NavbarCustom = () => {
                 <div className='w-full justify-between items-center flex'>
                     <div className='grid grid-cols-1 lg:grid-cols-5'>
                         <div className='w-[68px] md:w-[80px] lg:w-[90px] ml-5'>
-                            <Image src="https://www.ikea.com/global/assets/logos/brand/ikea.svg" alt="logo-company" width={1000} height={1000} />
+                            <Image loading="lazy" src="https://www.ikea.com/global/assets/logos/brand/ikea.svg" alt="logo-company" width={1000} height={1000} />
                         </div>
                         <Link href='/' className='hover:font-bold hidden lg:flex justify-center items-center text-black'>Home</Link>
                         <Link href='/about' className='hover:font-bold lg:flex items-center hidden text-black'>About Us</Link>
