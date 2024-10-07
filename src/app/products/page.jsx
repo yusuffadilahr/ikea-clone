@@ -8,7 +8,7 @@ const Page = () => {
     const { ikeaOutdoorFurnitureProducts, ikeaWorkspaceProducts } = useDataProduct()
 
     return (
-        <main className='w-full pt-10 md:pt-20 lg:pt-28 px-4 md:px-7 lg:px-10 h-fit bg-white'>
+        <main className='w-full pt-10 md:pt-20 lg:pt-28 px-4 md:px-7 lg:px-10 h-fit bg-white text-black'>
             <section className='w-full h-fit'>
                 <div className='w-full flex flex-row gap-5 h-96'>
                     <Image className='lg:w-[60%] object-cover object-top' src={'https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__en_us_1664514613621_0_0.webp'} width={500} height={500} alt='Products' />
