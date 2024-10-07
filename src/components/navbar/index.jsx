@@ -22,9 +22,9 @@ const NavbarCustom = () => {
             <nav className='w-full h-14 md:h-20 bg-white lg:h-24 flex items-center z-20 top-0 fixed'>
                 <div className='w-full justify-between items-center flex'>
                     <div className='grid grid-cols-1 lg:grid-cols-5'>
-                        <div className='w-[68px] md:w-[80px] lg:w-[90px] ml-5'>
+                        <Link href='/' className='w-[68px] md:w-[80px] lg:w-[90px] ml-5'>
                             <Image loading="lazy"src="https://www.ikea.com/global/assets/logos/brand/ikea.svg" alt="logo-company" width={1000} height={1000} />
-                        </div>
+                        </Link>
                         <Link href='/' className='hover:font-bold hidden lg:flex justify-center items-center text-black'>Home</Link>
                         <Link href='/about' className='hover:font-bold lg:flex items-center hidden text-black'>About Us</Link>
                         <Link href='/products' className='hover:font-bold hidden lg:flex items-center text-black'>Products</Link>

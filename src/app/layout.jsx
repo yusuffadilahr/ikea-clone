@@ -3,7 +3,8 @@ import "./globals.css";
 import NavbarCustom from "@/components/navbar";
 import FooterCustom from "@/components/footer";
 import TanstackProviders from "@/providers/tanstackProviders";
-import ReduxProvider from "@/providers/reduxProviders";
+// import ReduxProvider from "@/providers/reduxProviders";
+import GlobalLoading from "@/components/hocLoading";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,11 +29,13 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <TanstackProviders>
-          {/* <ReduxProvider> */}
-          <NavbarCustom />
-          {children}
-          <FooterCustom />
-          {/* </ReduxProvider> */}
+          <GlobalLoading>
+            {/* <ReduxProvider> */}
+            <NavbarCustom />
+            {children}
+            <FooterCustom />
+            {/* </ReduxProvider> */}
+          </GlobalLoading>
         </TanstackProviders>
       </body>
     </html>
