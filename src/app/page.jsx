@@ -25,7 +25,7 @@ export default function Home() {
     mutationFn: async () => {
       const res = await axios.get('https://randomuser.me/api/?results=6')
       const response = res.data.results
-      console.log(response, '<----')
+      // localStorage.setItem('team', response)
       dispatch(setUserData(response))
       return response
     }
