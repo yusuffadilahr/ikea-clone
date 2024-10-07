@@ -8,9 +8,9 @@ const FooterCustom = () => {
         <footer className="bottom-0 h-fit w-full pt-32 bg-white text-black">
             <div className="w-full flex justify-center items-center flex-col gap-10 mb-20">
                 <h1 className="font-bold text-sm md:text-2xl">A world of inspiration for your home</h1>
-                <Image width={500} height={500} src="https://www.ikea.com/global/assets/logos/brand/ikea.svg" alt="logo-company" className='w-20 md:w-[150px] ml-5' />
+                <Image loading="lazy"width={500} height={500} src="https://www.ikea.com/global/assets/logos/brand/ikea.svg" alt="logo-company" className='w-20 md:w-[150px] ml-5' />
             </div>
-            <Image width={500} height={500} src='https://www.ikea.com/global/en/images/footer-illustration.svg' alt="" className='w-full h-fit' />
+            <Image loading="lazy"width={500} height={500} src='https://www.ikea.com/global/en/images/footer-illustration.svg' alt="icons-ikea" className='w-full h-fit' />
             <div className="w-full h-52 bg-blue-800 flex flex-col justify-center items-center">
                 <div className='w-full h-full justify-center items-center flex flex-col text-white'>
                     <div className='grid px-2 lg:px-10 grid-cols-2 md:grid-cols-3 text-xs md:text-base lg:text-xl lg:grid-cols-6 font-semibold text-white gap-5'>

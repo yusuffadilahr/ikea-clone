@@ -6,10 +6,13 @@ const VideoContent = ({
     bgColor = 'bg-yellow-100',
     title,
     descShort,
-    flexRow = ' flex-col'
+    flexRow = ' flex-col',
+    pt = 'pt-32',
+    mdpt = 'pt-20',
+    onMobilePadMar = 'mt-8 pt-10'
 }) => {
     return (
-        <section className={`mt-8 w-full h-fit md:pb-20 md:pt-20 lg:pt-32 pt-10 pb-10 flex justify-center items-center ${bgColor} px-0`}>
+        <section className={`${onMobilePadMar} w-full h-fit md:pb-20 md:${mdpt} lg:${pt}  pb-10 flex justify-center items-center ${bgColor} px-0`}>
             <div className={`w-full h-full max-w-[96%] md:max-w-[96%] lg:max-w-[70%] flex ${flexRow} justify-center items-center`}>
                 <video autoPlay muted loop playsInline className={`w-full border ${height} rounded-xl`}>
                     <source src={video} type='video/mp4' />

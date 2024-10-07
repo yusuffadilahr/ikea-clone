@@ -9,7 +9,7 @@ const HeroSection = () => {
 
     return (
         <section className="w-full h-full flex justify-center bg-white dark:bg-white items-center mt-[60px] md:mt-[98px] relative">
-            <Image id="slide-image" src={imagesArray[currentIndex].img} alt="banner-brand" className="rounded-xl w-full h-[300px] md:h-[500px] object-cover" />
+            <Image loading="lazy"id="slide-image" src={imagesArray[currentIndex].img} alt="banner-brand" className="rounded-xl w-full h-[300px] md:h-[500px] object-cover" />
             <SlArrowLeft onClick={previousImg} className="w-4 md:w-7 h-fit text-black left-2 md:left-3 lg:left-10 absolute cursor-pointer hover:text-white" />
             <SlArrowRight onClick={nextImg} className="w-4 md:w-7 h-fit text-black right-2 md:right-3 lg:right-10 absolute cursor-pointer hover:text-white" />
             <div className="absolute top-[40%]">
