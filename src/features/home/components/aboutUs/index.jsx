@@ -19,7 +19,7 @@ const AboutUs = () => {
                     <Image loading="lazy"width={500} height={500} src='https://www.ikea.com/ext/ingkadam/m/558f842846a6fa1b/original/PX000263-crop002.jpg?f=m' alt="about-section" className="w-full md:w-fit lg:pr-10 lg:w-full h-[70vh] object-left object-cover" />
                 </div>
             </div>
-            <div className="w-full flex mt-10 px-2 lg:px-10">
+            <div className="w-full flex mt-10 lg:mt-20 px-2 lg:px-10">
                 <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div>
                         <Image loading="lazy"width={500} height={500} src='https://www.ikea.com/ext/ingkadam/m/c391306500d28d8/original/PE117762-crop001.jpg?f=m' alt="about-section" className="w-full h-[80vh] object-cover" />

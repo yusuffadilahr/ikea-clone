@@ -21,6 +21,16 @@ const nextConfig = {
                 pathname: '**',
                 hostname: 'www.inter.ikea.com',
                 protocol: 'https'
+            },
+            {
+                pathname: '**',
+                hostname: 'd2xjmi1k71iy2m.cloudfront.net',
+                protocol: 'https'
+            },
+            {
+                pathname: '**',
+                hostname: 'flexaworld.com',
+                protocol: 'https'
             }
         ],
         formats: ['image/avif', 'image/webp']

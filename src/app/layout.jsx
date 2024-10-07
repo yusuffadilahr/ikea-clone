@@ -29,13 +29,13 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <TanstackProviders>
-          <GlobalLoading>
-            {/* <ReduxProvider> */}
-            <NavbarCustom />
-            {children}
-            <FooterCustom />
-            {/* </ReduxProvider> */}
-          </GlobalLoading>
+          {/* <GlobalLoading> */}
+          {/* <ReduxProvider> */}
+          <NavbarCustom />
+          {children}
+          <FooterCustom />
+          {/* </ReduxProvider> */}
+          {/* </GlobalLoading> */}
         </TanstackProviders>
       </body>
     </html>

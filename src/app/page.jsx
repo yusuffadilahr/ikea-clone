@@ -42,6 +42,8 @@ export default function Home() {
         src='https://www.ikea.com/images/culture-and-values-2f0b8e99a3ebdac02764fd6c947ca3d8.jpg?f=xxxl'
         bgColor="bg-yellow-400 rounded-xl"
       />
+
+      {/* Culture */}
       <CultureComponent />
 
 
