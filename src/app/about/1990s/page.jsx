@@ -74,8 +74,8 @@ const Page = () => {
 
 
     return (
-        <AboutPage hiddenContent='hidden' px='0' year={pathName}>
-            <main className='w-full mt-10 h-fit flex flex-col justify-center items-center'>
+        <AboutPage pxSelect='px-5' hiddenContent='hidden' px='0' year={pathName}>
+            <main className='w-full md:mt-10 h-fit flex flex-col justify-center items-center'>
 
                 <CardGridResponsive>
                     {/* Mobile Device */}

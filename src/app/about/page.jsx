@@ -4,8 +4,10 @@ import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
 import { BsArrowRight } from 'react-icons/bs'
+import { useRouter } from 'next/navigation'
 
-const AboutPage = ({ children, hiddenContent='block', px='px-5', year }) => {
+const AboutPage = ({ children, hiddenContent = 'block', px = 'px-5', year, pxSelect }) => {
+    const router = useRouter()
 
     const arrayHistory = [
         { id: 1, year: '1940s', url: '/about/1940s' },
@@ -18,6 +20,12 @@ const AboutPage = ({ children, hiddenContent='block', px='px-5', year }) => {
         { id: 8, year: '2010s', url: '/about/2010s' },
         { id: 9, year: '2020s', url: '/about/2020s' }
     ]
+
+    const setDataRoute = (values) => {
+        console.log(values)
+        router.push(`/about/${values}`)
+        router.refresh()
+    }
 
     return (
         <>
@@ -37,6 +45,16 @@ const AboutPage = ({ children, hiddenContent='block', px='px-5', year }) => {
                                     </Link>
                                 ))}
                             </div>
+                            <div className={`w-full flex ${pxSelect} md:hidden h-fit`}>
+                                <select name="" id="" className='w-full py-3 text-sm flex px-2 border' onChange={(e) => setDataRoute(e.target.value)}>
+                                    <option value="">-- Our History --</option>
+                                    {arrayHistory.map((item, i) => (
+                                        <option key={i} className='py-4 px-4 w-full font-bold bg-neutral-100 rounded-full'>
+                                            {item.year}
+                                        </option>
+                                    ))}
+                                </select>
+                            </div>
                         </div>
                         {children}
                     </div>
@@ -49,7 +67,7 @@ const AboutPage = ({ children, hiddenContent='block', px='px-5', year }) => {
                     </div>
                     <div className='w-full md:px-0 lg:px-60 h-fit flex flex-col justify-center md:mt-0 lg:mt-20 items-center mb-20 md:mb-36'>
                         <div className='w-full flex flex-col justify-center items-center'>
-                            <Image loading="lazy"alt='founder' className='w-full object-cover rounded-xl h-full' src={'https://www.ikea.com/global/en/images/ingvarwithchair_28c4a64ed2.jpg?f=sg'} width={500} height={500} />
+                            <Image loading="lazy" alt='founder' className='w-full object-cover rounded-xl h-full' src={'https://www.ikea.com/global/en/images/ingvarwithchair_28c4a64ed2.jpg?f=sg'} width={500} height={500} />
                             <div className='flex flex-col max-w-[70%] justify-center mt-20 md:mt-36 items-center w-full'>
                                 <h1 className='flex justify-normal items-center mb-8 w-full font-bold text-xl md:text-5xl'>The story of IKEA</h1>
                                 <p className='text-sm md:text-xl'>Weve come a long way since our early days in Älmhult, Sweden, but IKEA founder Ingvar Kamprads dream to create a better life for as many people as possible – whatever the size of their wallet – is and will always be our driving force.</p>
@@ -65,7 +83,7 @@ const AboutPage = ({ children, hiddenContent='block', px='px-5', year }) => {
                     <div className="w-full flex mt-10 md:mt-32 px-2 lg:px-20 mb-32">
                         <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 gap-5">
                             <div className='w-full md:w-[80%]'>
-                                <Image loading="lazy"width={500} height={500} src={'https://www.ikea.com/global/en/images/ikea_early_beginnings_green_shed_elmtaryd_sweden_1940s_1600x900_85425134bf.jpg?f=sg'} alt="about-section" className="w-full rounded-xl h-[50vh] md:h-[80vh] object-cover" />
+                                <Image loading="lazy" width={500} height={500} src={'https://www.ikea.com/global/en/images/ikea_early_beginnings_green_shed_elmtaryd_sweden_1940s_1600x900_85425134bf.jpg?f=sg'} alt="about-section" className="w-full rounded-xl h-[50vh] md:h-[80vh] object-cover" />
                             </div>
                             <div className="flex flex-col gap-8 justify-center items-center w-full">
                                 <h1 className="flex max-w-[90%] md:max-w-[65%] w-full justify-normal text-xl md:text-4xl font-bold">Humble beginnings</h1>
@@ -73,8 +91,8 @@ const AboutPage = ({ children, hiddenContent='block', px='px-5', year }) => {
                                 <div className='w-full justify-center items-center flex'>
                                     <button className='border-y flex justify-between py-3 w-full max-w-[90%] md:max-w-[65%] text-xs md:text-base'>
                                         Dive into IKEA&apos;s full history at IKEA Museum
-                                        <BsArrowRight className='w-5 h-5'/>
-                                        </button>
+                                        <BsArrowRight className='w-5 h-5' />
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -86,7 +104,7 @@ const AboutPage = ({ children, hiddenContent='block', px='px-5', year }) => {
                                 <p className='text-justify md:text-left md:pr-10 md:text-base text-sm'>High costs and damage rates when transporting furniture via mail order were constant thorns in Ingvar’s side. Although flatpack furniture already existed, it hadn’t really taken off in Sweden yet. In 1953, IKEA adopted the flatpack. Self-assembly products proved popular and to be the solution to those costly transportation problems.</p>
                                 <div className="flex flex-col justify-center items-center w-full">
                                     <h1 className="text-base md:text-xl lg:text-xl text-center md:text-left font-bold pt-10">
-                                       &quot; Most things still remain to be done. A glorious future! &quot;
+                                        &quot; Most things still remain to be done. A glorious future! &quot;
                                     </h1>
                                     <p className="flex flex-col justify-start w-full lg:px-7 pt-6 font-bold">- Ingvar Kamprad
                                         <span className="font-normal">IKEA founder</span>
@@ -94,7 +112,7 @@ const AboutPage = ({ children, hiddenContent='block', px='px-5', year }) => {
                                 </div>
                             </div>
                             <div>
-                                <Image loading="lazy"width={500} height={500} src={'https://www.ikea.com/ext/ingkadam/m/c391306500d28d8/original/PE117762-crop001.jpg?f=l'} alt="about-section" className="w-full rounded-xl h-[80vh] object-cover" />
+                                <Image loading="lazy" width={500} height={500} src={'https://www.ikea.com/ext/ingkadam/m/c391306500d28d8/original/PE117762-crop001.jpg?f=l'} alt="about-section" className="w-full rounded-xl h-[80vh] object-cover" />
                             </div>
                         </div>
                     </div>

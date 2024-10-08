@@ -22,7 +22,7 @@ const Page = () => {
     ];
 
     return (
-        <AboutPage hiddenContent='hidden' px='0' year={pathName}>
+        <AboutPage pxSelect='px-5' hiddenContent='hidden' px='0' year={pathName}>
 
             <CardGridResponsive>
                 {/* Mobile Device */}
