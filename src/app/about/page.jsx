@@ -5,6 +5,7 @@ import React from 'react'
 import Image from 'next/image'
 import { BsArrowRight } from 'react-icons/bs'
 import { useRouter } from 'next/navigation'
+import CultureComponent from '@/features/home/components/culture'
 
 const AboutPage = ({ children, hiddenContent = 'block', px = 'px-5', year, pxSelect }) => {
     const router = useRouter()
@@ -116,6 +117,7 @@ const AboutPage = ({ children, hiddenContent = 'block', px = 'px-5', year, pxSel
                             </div>
                         </div>
                     </div>
+                    <CultureComponent />
                 </section>
 
             </main>
