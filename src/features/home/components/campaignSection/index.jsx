@@ -20,9 +20,9 @@ const CampaignSection = () => {
       </div>
       <div className="w-full md:w-6/12 h-full rounded-lg gap-1 flex flex-col">
         <div className="w-full h-full bg-yellow-400 rounded-t-lg flex justify-center items-center">
-          <button className='md:text-2xl h-32 text-3xl lg:text-4xl flex items-center font-bold text-black hover:text-neutral-600'>Go Shopping
+          <Link href='/products' className='md:text-2xl h-32 text-3xl lg:text-4xl flex items-center font-bold text-black hover:text-neutral-600'>Go Shopping
             <BsArrowRightCircleFill className="ml-5 md:ml-4 lg:ml-10" />
-          </button>
+          </Link>
         </div>
         <Link href='https://ikea.com' className="w-full h-16 md:h-32 text-black hover:text-neutral-600 bg-yellow-400 hover:bg-yellow-200 rounded-b-lg text-lg flex justify-start pl-10 items-center">
           source: <span className='font-bold ml-1'>IKEA.com</span> <PiArrowBendRightUp />

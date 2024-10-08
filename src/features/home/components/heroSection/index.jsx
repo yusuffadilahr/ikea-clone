@@ -3,6 +3,7 @@ import React from 'react'
 import { BsArrowRightCircleFill } from 'react-icons/bs'
 import { SlArrowLeft, SlArrowRight } from 'react-icons/sl'
 import useHomeHooks from '../../hooks/useHomeHooks'
+import Link from 'next/link'
 
 const HeroSection = () => {
   const { currentIndex, imagesArray, previousImg, nextImg } = useHomeHooks()
@@ -15,9 +16,9 @@ const HeroSection = () => {
             <div className="absolute top-[40%]">
                 <h1 className="text-sm md:text-4xl lg:text-5xl xl:text-5xl font-bold text-white">{imagesArray[currentIndex].caption}</h1>
                 <div className="w-full flex justify-center items-center">
-                    <button className="flex items-center py-2 px-5 font-bold text-white text-xs md:text-base lg:text-lg xl:text-xl hover:text-neutral-200">Go Shopping
+                    <Link href='/products' className="flex items-center py-2 px-5 font-bold text-white text-xs md:text-base lg:text-lg xl:text-xl hover:text-neutral-200">Go Shopping
                         <BsArrowRightCircleFill className="ml-5" />
-                    </button>
+                    </Link>
                 </div>
             </div>
         </section>

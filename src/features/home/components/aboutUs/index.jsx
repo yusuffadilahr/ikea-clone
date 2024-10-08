@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const AboutUs = () => {
@@ -13,7 +14,7 @@ const AboutUs = () => {
                 <div className="w-full md:w-1/2 lg:w-6/12 h-full flex flex-col pt-2 md:pt-10 px-2 lg:px-12">
                     <h1 className="text-lg md:text-2xl font-bold mb-5">From humble origins to global brand – a brief history of IKEA</h1>
                     <p className="w-full md:max-w-[850%] text-sm md:text-base">The IKEA story began in the Swedish town of Älmhult in the 1940s, with an enterprising boy who hoped to improve the lives of people everywhere. Here you follow the development of IKEA, decade for decade.</p>
-                    <button className="border text-xs rounded-full mb-5 md:mb-0 px-1 py-2 mt-5 md:mt-10 border-black hover:border">Learn more about the history of IKEA</button>
+                    <Link href='/about' className="border text-xs text-center rounded-full mb-5 md:mb-0 px-1 py-2 mt-5 md:mt-10 border-black hover:border">Learn more about the history of IKEA</Link>
                 </div>
                 <div className="w-full md:w-1/2 lg:w-full h-full">
                     <Image loading="lazy"width={500} height={500} src='https://www.ikea.com/ext/ingkadam/m/558f842846a6fa1b/original/PX000263-crop002.jpg?f=m' alt="about-section" className="w-full md:w-fit lg:pr-10 lg:w-full h-[70vh] object-left object-cover" />

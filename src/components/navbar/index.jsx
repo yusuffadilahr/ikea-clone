@@ -13,10 +13,6 @@ const NavbarCustom = () => {
     const handleOpenSideBar = () => {
         setSideBarOpen(!sideBarOpen)
     }
-
-    const closeSideBar = () => {
-        setSideBarOpen(false)
-    }
     return (
         <>
             <nav className='w-full h-14 md:h-20 bg-white lg:h-24 flex items-center z-20 top-0 fixed'>
@@ -47,31 +43,31 @@ const NavbarCustom = () => {
             {sideBarOpen ?
                 ''
                 :
-                <aside onMouseLeave={closeSideBar} className='w-[80%] lg:hidden top-14 lg:top-20 py-8 fixed flex flex-col z-20 right-0 h-screen bg-white px-5'>
+                <aside className='w-[80%] lg:hidden top-14 lg:top-20 py-8 fixed flex flex-col z-20 right-0 h-screen bg-white px-5'>
                     <section className="w-full h-fit rounded-lg gap-1 flex flex-col">
                         <div className="w-full h-[10vh] bg-yellow-400 rounded-t-lg flex justify-center items-center text-black">
-                            <button className='md:text-2xl h-32 text-lg flex items-center font-bold hover:text-neutral-600'>Go Shopping
+                            <Link href='/products' onClick={handleOpenSideBar} className='md:text-2xl h-32 text-lg flex items-center font-bold hover:text-neutral-600'>Go Shopping
                                 <BsArrowRightCircleFill className="ml-5 md:ml-4 lg:ml-10" />
-                            </button>
+                            </Link>
                         </div>
-                        <Link href='https://ikea.com' className="w-full h-16 md:h-16 text-black hover:text-neutral-600 bg-yellow-400 hover:bg-yellow-200 rounded-b-lg text-sm md:text-lg flex justify-start pl-10 items-center">
+                        <Link href='https://ikea.com' onClick={handleOpenSideBar} className="w-full h-16 md:h-16 text-black hover:text-neutral-600 bg-yellow-400 hover:bg-yellow-200 rounded-b-lg text-sm md:text-lg flex justify-start pl-10 items-center">
                             source: <span className='font-bold ml-1'>IKEA.com</span> <PiArrowBendRightUp />
                         </Link>
                     </section>
                     <section className='text-xl md:text-2xl font-bold mt-5 text-black'>
-                        <Link href='/' className='flex py-4 border-t justify-between items-center pr-2'>
+                        <Link href='/' onClick={handleOpenSideBar} className='flex py-4 border-t justify-between items-center pr-2'>
                             Home
                             <BsArrowRightCircleFill />
                         </Link>
-                        <Link href='/about' className='flex py-4 border-t justify-between items-center pr-2'>
+                        <Link onClick={handleOpenSideBar} href='/about' className='flex py-4 border-t justify-between items-center pr-2'>
                             About Us
                             <BsArrowRightCircleFill />
                         </Link>
-                        <Link href='/products' className='flex py-4 border-t justify-between items-center pr-2'>
+                        <Link onClick={handleOpenSideBar} href='/products' className='flex py-4 border-t justify-between items-center pr-2'>
                             Products
                             <BsArrowRightCircleFill />
                         </Link>
-                        <Link href='/team' className='flex py-4 border-y justify-between items-center pr-2'>
+                        <Link onClick={handleOpenSideBar} href='/team' className='flex py-4 border-y justify-between items-center pr-2'>
                             Our Team
                             <BsArrowRightCircleFill />
                         </Link>

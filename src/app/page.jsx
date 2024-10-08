@@ -16,17 +16,9 @@ export default function Home() {
 
   return (
     <main className='w-full h-fit flex flex-col px-5 bg-white dark:bg-white'>
-
-      {/* Hero Section */}
       <HeroSection />
-
-      {/* Content After Hero Section */}
       <CampaignSection />
-
-      {/* Product */}
       <ProductList />
-
-      {/* Video Content */}
       <VideoContent
         title='The Tyg collection'
         height="h-[70vh] object-cover"
@@ -34,24 +26,16 @@ export default function Home() {
         descShort='IKEA pre-cut fabrics are back!'
         video='https://www.ikea.com/global/en/images/Tyg_Starpage_40366c09a3.mp4'
       />
-
-      {/* About Us */}
       <AboutUs />
-
       <ImageContent
         src='https://www.ikea.com/images/culture-and-values-2f0b8e99a3ebdac02764fd6c947ca3d8.jpg?f=xxxl'
         bgColor="bg-yellow-400 rounded-xl"
       />
-
-      {/* Culture */}
       <CultureComponent />
-
-
-      {/* Testimonial */}
       <Testimonial />
-
-      {/* Team Area */}
+      
       {/* <TeamComponent /> */}
+      {/* Team Area */}
 
     </main>
   )
