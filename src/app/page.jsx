@@ -18,13 +18,14 @@ export default function Home() {
       <HeroSection />
       <CampaignSection />
       <ProductList />
-      {/* <VideoContent
+      <VideoContent
         title='The Tyg collection'
         height="h-[70vh] object-cover"
         bgColor="bg-blue-600 text-white rounded-xl"
         descShort='IKEA pre-cut fabrics are back!'
         video='https://www.ikea.com/global/en/images/Tyg_Starpage_40366c09a3.mp4'
-      /> */}
+      />
+
       <AboutUs />
       <ImageContent
         src='https://www.ikea.com/images/culture-and-values-2f0b8e99a3ebdac02764fd6c947ca3d8.jpg?f=xxxl'
