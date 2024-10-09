@@ -2,7 +2,7 @@ import HeroSection from "@/features/home/components/heroSection";
 import CampaignSection from "@/features/home/components/campaignSection";
 import ProductList from "@/features/home/components/productList";
 import AboutUs from "@/features/home/components/aboutUs";
-import Testimonial from "@/features/home/components/testimonials";
+import Testimonial from "@/components/core/testimonials";
 import VideoContent from "@/components/core/videoContent";
 import CultureComponent from "@/components/core/culture";
 import ImageContent from "@/components/core/ImageContent";

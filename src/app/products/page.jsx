@@ -1,3 +1,4 @@
+import Testimonial from '@/components/core/testimonials'
 import ProductCard from '@/features/products/components/productList/productCard'
 import ProductLayout from '@/features/products/components/productList/productLayout'
 import useDataProduct from '@/features/products/hooks/useDataProduct'
@@ -35,6 +36,7 @@ const Page = () => {
                     ))}
                 </ProductLayout>
             </section>
+            <Testimonial />
         </main>
     )
 }
