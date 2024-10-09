@@ -18,6 +18,7 @@ export default function Home() {
       <HeroSection />
       <CampaignSection />
       <ProductList />
+      
       {/* <VideoContent
         title='The Tyg collection'
         height="h-[70vh] object-cover"
