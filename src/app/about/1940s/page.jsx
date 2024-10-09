@@ -11,7 +11,7 @@ const Page = () => {
     pathName = pathName.slice(-3)
 
     return (
-        <AboutPage pxSelect='px-5' hiddenContent='hidden' px='0' year={pathName}>
+        <AboutPage hidden='hidden' pxSelect='px-5' hiddenContent='hidden' px='0' year={pathName}>
             <section className='w-full mt-10 h-fit flex flex-col justify-center items-center'>
                 <VideoContent
                     onMobilePadMar='pt-0 mt-0'
