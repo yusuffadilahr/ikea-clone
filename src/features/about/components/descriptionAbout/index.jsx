@@ -1,4 +1,4 @@
-import CultureComponent from '@/features/home/components/culture'
+import CultureComponent from '@/components/core/culture'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'

@@ -25,7 +25,7 @@ const CultureComponent = () => {
                     </div>
                     <div className="flex flex-col lg:px-6 justify-center w-full">
                         <h1 className="font-bold text-lg md:text-xl lg:text-2xl mb-5">Equality Works Better</h1>
-                        <p>We believe gender equality is a human right. Our ambition is to reach gender equality at IKEA Group, which goes beyond a 50/50 gender balance in all levels and positions. Gender equality is also about creating an inclusive culture where all genders are valued for their unique contributions.
+                        <p className='text-sm md:text-base'>We believe gender equality is a human right. Our ambition is to reach gender equality at IKEA Group, which goes beyond a 50/50 gender balance in all levels and positions. Gender equality is also about creating an inclusive culture where all genders are valued for their unique contributions.
                             That is why we have been working with the gender agenda for over a decade. We are proud to be part of the first UN high-level panel on Women Economic Empowerment to help unlock potential for women to fully participate in the economy and achieve financial independence.</p>
                     </div>
                 </div>

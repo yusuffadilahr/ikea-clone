@@ -5,12 +5,12 @@ import React from 'react'
 const onFetchData = async () => {
     try {
         let res = await fetch('https://randomuser.me/api/?results=6', {
-            cache: 'force-cache'
+            cache: 'no-store'
         })
 
         res = await res.json()
-
         const response = res.results
+
         return response
     } catch (error) {
         console.log(error)

@@ -1,13 +1,12 @@
-'use client'
 import HeroSection from "@/features/home/components/heroSection";
 import CampaignSection from "@/features/home/components/campaignSection";
 import ProductList from "@/features/home/components/productList";
 import AboutUs from "@/features/home/components/aboutUs";
 import Testimonial from "@/features/home/components/testimonials";
 import VideoContent from "@/components/core/videoContent";
-import CultureComponent from "@/features/home/components/culture";
+import CultureComponent from "@/components/core/culture";
 import ImageContent from "@/components/core/ImageContent";
-// import TeamComponent from "@/features/home/components/team";
+import TeamComponent from "@/features/home/components/team";
 
 
 // import Link from "next/link";
@@ -34,7 +33,7 @@ export default function Home() {
       <CultureComponent />
       <Testimonial />
       
-      {/* <TeamComponent /> */}
+      <TeamComponent />
       {/* Team Area */}
 
     </main>

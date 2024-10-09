@@ -1,18 +1,10 @@
-'use client'
-
-import Link from 'next/link'
 import React from 'react'
-import Image from 'next/image'
-import { BsArrowRight } from 'react-icons/bs'
-import { useRouter } from 'next/navigation'
-import CultureComponent from '@/features/home/components/culture'
 import CaptionAboutUs from '@/features/about/components/captionAboutUs'
 import DataHistory from '@/features/about/components/dataHistory'
 import DescriptionHistory from '@/features/about/components/descriptionAbout'
+import TeamComponents from '@/components/core/teamComponents'
 
 const AboutPage = ({ children, hiddenContent = 'block', px = 'px-5', year, pxSelect }) => {
-    const router = useRouter()
-
     const arrayHistory = [
         { id: 1, year: '1940s', url: '/about/1940s' },
         { id: 2, year: '1950s', url: '/about/1950s' },
@@ -25,12 +17,6 @@ const AboutPage = ({ children, hiddenContent = 'block', px = 'px-5', year, pxSel
         { id: 9, year: '2020s', url: '/about/2020s' }
     ]
 
-    const setDataRoute = (values) => {
-        console.log(values)
-        router.push(`/about/${values}`)
-        router.refresh()
-    }
-
     return (
         <>
             <main className={`w-full h-fit flex flex-col ${px} mt-14 bg-white text-black`}>
@@ -38,12 +24,14 @@ const AboutPage = ({ children, hiddenContent = 'block', px = 'px-5', year, pxSel
                 <section className='w-full h-fit flex-col justify-center flex'>
                     <CaptionAboutUs year={year} />
                     <div className='w-full justify-center items-center h-fit flex flex-col pt-10'>
-                        <DataHistory pxSelect={pxSelect} arrayHistory={arrayHistory} onChange={(e) => setDataRoute(e.target.value)} />
+                        <DataHistory pxSelect={pxSelect} arrayHistory={arrayHistory} />
                         {children}
                     </div>
                 </section>
 
                 <DescriptionHistory hiddenContent={hiddenContent} />
+
+                <TeamComponents />
 
             </main>
         </>
